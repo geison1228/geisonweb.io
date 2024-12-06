@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares para Visitar en Costa Rica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #ffffff 33.33%, #002b7f 33.33%, #002b7f 66.66%, #ce1126 66.66%);
+            color: #333;
+        }
+        header {
+            background-color: rgba(0, 43, 127, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .place {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .place img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .place h3 {
+            margin: 10px;
+            font-size: 18px;
+        }
+        .place p {
+            margin: 10px;
+            font-size: 14px;
+        }
+        footer {
+            background-color: rgba(206, 17, 38, 0.9);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        form button {
+            background-color: #002b7f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #ce1126;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explora Costa Rica</h1>
+        <p>Descubre los mejores lugares para visitar y sugiere tu próximo destino</p>
+    </header>
+    <main>
+        <section class="places">
+            <div class="place">
+                <img src="https://www.nacion.com/resizer/BbNUpJ3MWdnA3y8r1XfUg4A2-cA=/arc-anglerfish-arc2-prod-gruponacion/public/ZX5HJXQDOZGNRCZNOKJ5T2M44A.jpg" alt="Monteverde">
+                <h3>Monteverde</h3>
+                <p>Explora el bosque nuboso y su biodiversidad única.</p>
+            </div>
+            <div class="place">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Manuel_Antonio_Parque_Nacional_2.JPG" alt="Playa Manuel Antonio">
+                <h3>Playa Manuel Antonio</h3>
+                <p>Relájate en las hermosas playas rodeadas de naturaleza.</p>
+            </div>
+            <div class="place">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Arenal_volcano_panorama.jpg" alt="Volcán Arenal">
+                <h3>Volcán Arenal</h3>
+                <p>Admira este imponente volcán y disfruta de aguas termales cercanas.</p>
+            </div>
+        </section>
+        <form>
+            <h2>Sugiere un destino</h2>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea placeholder="¿Qué lugar sugieres para visitar?" rows="4" required></textarea>
+            <button type="submit">Enviar sugerencia</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Explora Costa Rica. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
